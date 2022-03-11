@@ -1,5 +1,6 @@
 # POMODORO APP #
-A task management app based on Pomodoro technique
+A task management app based on Pomodoro technique.
+
 This is a JS practice in AgilityIO Vietnam
 
 ## OVERVIEW ##
