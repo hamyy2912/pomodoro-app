@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro App</title>
+  <link rel="shortcut icon" href="./assets/pomodoro-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="pomodoro-mode">
+  <header class="header flex">
+    <p class="app-name">Pomodoro Timer App</p>
+    <div id="log-block">
+      <button class="log-btn show-login-btn" id="show-login-btn">Login</button>  
+      <button class="log-btn logout-btn" id="logout-btn">Logout</button>
+    </div>
+  </header>
+  <hr />
+  <main id="main-body">
+    <div class="clock">
+      <div class="timer-mode flex">
+        <button class="timer-mode-btn" id="pomo-btn">Pomodoro</button>
+        <button class="timer-mode-btn" id="break-btn">Break</button>
+      </div>
+      <div class="timer" id="main-timer"></div>
+      <div class="clock-btns flex">
+        <button class="clock-btn start-btn" id="start-btn">Start</button>
+        <button class="clock-btn finish-btn" id="finish-btn">Finish</button>
+        <button class="clock-btn reset-btn" id="reset-btn">Reset</button>
+      </div>
+    </div>
+    <div id="selected-task">
+      <p id="task-id">#1</p>
+      <p id="task-name">Time to focus!</p>  
+    </div>
+    <div class="task-list">
+      <div class="task-list-header flex">
+        <p>Tasks</p>
+        <div class="menu">
+          <button class="edit-btn" id="sub-menu-btn"></button>  
+          <ul id="sub-menu">
+            <li class="sub-menu-item" id="clear-finished-task">Clear finished tasks</li>
+            <li class="sub-menu-item" id="clear-all-task">Clear all tasks</li>
+          </ul>
+        </div>
+      </div>
+      <ul id="task-list-body"></ul>  
+    </div>
+    <form id="add-task-form">
+      <div class="input-group">
+        <input 
+          type="text" 
+          placeholder="Enter your task" 
+          id="input-task-name" 
+          class='input-task-name' />
+        <label for="input-est-pomo">Est Pomodoros</label>
+        <input 
+          type="text" 
+          value="1"
+          id="input-est-pomo" 
+          class='input-pomo'/>
+      </div>
+      <div class="flex btn-group">
+        <button class="cancel-btn form-btn" id="cancel-add-task">Cancel</button>
+        <input 
+          class="submit-btn form-btn" 
+          id="save-task-btn" 
+          type="submit" 
+          value="Save" 
+          disabled />
+      </div>
+    </form>
+    <button id="add-task-btn">Add task</button>
+    <div id="data-section"></div>
+  </main>
+  <div class="login-modal" id="login-modal">
+    <div class="main-login">
+      <button class="close-modal-btn" id="close-modal-btn">x</button>
+      <p class="app-name">Pomodoro Timer App</p>
+      <p class="login-label">Login</p>
+      <form id="login-form">
+        <label for="email" id="email-label">Email</label>
+        <input 
+          type="text" 
+          placeholder="example@mail.com" 
+          name="email" 
+          id="input-email" 
+          required />
+        <label for="password" id="password-label">Password</label>
+        <input 
+          type="password" 
+          name="password" 
+          id="input-password" 
+          required>
+        <input type="submit" id="login-btn" value="Login">  
+      </form>
+      <div class="create-account-block">
+        <p>You don't have account?</p>
+        <p class="create-account" id="create-account">Create an account</p>  
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>
