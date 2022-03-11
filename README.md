@@ -5,8 +5,7 @@ This is a JS practice in AgilityIO Vietnam
 
 ## OVERVIEW ##
 - This document provides information about Pomodoro app.
-- [reference app](Pomofocus.io))
-- 
+- Reference app: [Pomofocus.io](Pomofocus.io)
 ## TECHNIQUES ##
 - HTML5/CSS3
 - JavaScript
