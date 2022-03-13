@@ -1,0 +1,54 @@
+body {
+  position: relative;
+
+  margin-top: 20px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+  color: var(--light);
+}
+
+.header,
+main, hr {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header, hr {
+  max-width: 650px;
+}
+
+main {
+  max-width: 550px;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer;
+  
+  border: 0;
+  border-radius: 5px;
+}
+
+.pomodoro-mode hr {
+  border: 1px solid var(--pomodoro-dark);
+  transition: border 0.5s ease-in-out 0s;
+}
+
+.break-mode hr {
+  border: 1px solid var(--break-dark);
+  transition: border 0.5s ease-in-out 0s;
+}
+
+/* Common classes */
+.flex {
+  display: flex;
+}
+
+body .hide {
+  display: none;
+}

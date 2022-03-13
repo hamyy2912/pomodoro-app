@@ -1,0 +1,29 @@
+:root {
+  --pomodoro: rgb(217, 85, 80);
+  --pomodoro-02: rgb(217, 85, 80, 0.2);
+  --pomodoro-05: rgb(217, 85, 80, 0.5);
+  --pomodoro-dark: rgba(88, 1, 1, 0.2);
+  --break: rgb(76, 145, 149);
+  --break-05: rgb(76, 145, 149, 0.5);
+  --break-dark: rgba(1, 90, 90, 0.5);
+  --warning: rgb(255, 0, 0, 0.6);
+  --success: rgb(0, 195, 0);
+
+  --light: rgb(255, 255, 255);
+  --light-03: rgb(255, 255, 255, 0.3);
+
+  --dark: rgb(0, 0, 0);
+  --dark-01: rgb(0, 0, 0, 0.1);
+  --dark-02: rgb(0, 0, 0, 0.2);
+  --dark-03: rgb(0, 0, 0, 0.3);
+  --dark-04: rgb(0, 0, 0, 0.4);
+  --dark-05: rgb(0, 0, 0, 0.5);
+
+  --grey: rgb(128, 128, 128);
+  --grey-05: rgb(128, 128, 128, 0.5);
+
+  --sliver: rgb(196, 196, 196);
+  --dorado: rgb(85, 85, 85);
+  --gallery: rgb(239, 239, 239);
+  --mineShaft: rgb(34, 34, 34);
+}
