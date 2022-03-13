@@ -10,10 +10,10 @@
 </head>
 <body class="pomodoro-mode">
   <header class="header flex">
-    <p class="app-name">Pomodoro Timer App</p>
+    <a class="app-name">Pomodoro Timer App</a>
     <div id="log-block">
       <button class="log-btn show-login-btn" id="show-login-btn">Login</button>  
-      <button class="log-btn logout-btn" id="logout-btn">Logout</button>
+      <button class="log-btn logout-btn hide" id="logout-btn">Logout</button>
     </div>
   </header>
   <hr />
@@ -39,7 +39,7 @@
         <p>Tasks</p>
         <div class="menu">
           <button class="edit-btn" id="sub-menu-btn"></button>  
-          <ul id="sub-menu">
+          <ul class="sub-menu hide" id="sub-menu">
             <li class="sub-menu-item" id="clear-finished-task">Clear finished tasks</li>
             <li class="sub-menu-item" id="clear-all-task">Clear all tasks</li>
           </ul>
@@ -47,7 +47,7 @@
       </div>
       <ul id="task-list-body"></ul>  
     </div>
-    <form id="add-task-form">
+    <form id="add-task-form" class="add-task-form hide">
       <div class="input-group">
         <input 
           type="text" 
@@ -72,9 +72,9 @@
       </div>
     </form>
     <button id="add-task-btn">Add task</button>
-    <div id="data-section"></div>
+    <div id="data-section" class="data-section"></div>
   </main>
-  <div class="login-modal" id="login-modal">
+  <div class="login-modal hide" id="login-modal">
     <div class="main-login">
       <button class="close-modal-btn" id="close-modal-btn">x</button>
       <p class="app-name">Pomodoro Timer App</p>
@@ -93,6 +93,8 @@
           name="password" 
           id="input-password" 
           required>
+        <p class="error-msg hide" id="error-msg"></p>
+        <p class="success-msg hide" id="success-msg"></p>
         <input type="submit" id="login-btn" value="Login">  
       </form>
       <div class="create-account-block">
