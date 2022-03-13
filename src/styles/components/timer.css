@@ -1,0 +1,103 @@
+.clock {
+  height: 300px;
+  padding: 30px 70px;
+
+  background-color: var(--light-03);
+  border-radius: 10px;
+}
+
+.timer {
+  height: 140px;
+
+  padding-top: 50px;
+
+  text-align: center;
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.clock-btns {
+  justify-content: space-between;
+}
+
+.clock-btn {
+  cursor: pointer;
+
+  height: 55px;
+  width: 100px;
+
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+
+  box-shadow: var(--gallery) 0px 6px 0px;
+  font-size: 22px;
+  background-color: var(--light);
+  
+  border: none;
+  border-radius: 4px;
+}
+
+.clock-btn:active {
+  box-shadow: none;
+  margin-top: 26px;
+}
+
+.pomodoro-mode .clock-btn {
+  color: var(--pomodoro);
+  transition: color 0.5s ease-in-out 0s;
+}
+
+.break-mode .clock-btn {
+  color: var(--break);
+  transition: color 0.5s ease-in-out 0s;
+}
+
+.timer-mode {
+  justify-content: space-between;
+}
+
+.timer-mode-btn {
+  height: 30px;
+  width: 200px;
+
+  font-size: 20px;
+  color: var(--light);
+}
+
+.pomodoro-mode {
+  background-color: var(--pomodoro);
+  transition: background-color 0.5s ease-in-out 0s;
+}
+
+.pomodoro-mode #pomo-btn {
+  background-color: var(--pomodoro);
+  transition: background-color 0.5s ease-in-out 0s;
+  font-weight: 600;
+}
+
+.pomodoro-mode #break-btn {
+  background-color: transparent;
+}
+
+.pomodoro-mode #break-btn:hover {
+  background-color: var(--pomodoro-05);
+}
+
+.break-mode {
+  background-color: var(--break);
+  transition: background-color 0.5s ease-in-out 0s;
+}
+
+.break-mode #break-btn {
+  background-color: var(--break);
+  transition: background-color 0.5s ease-in-out 0s;
+  font-weight: 600;
+}
+
+.break-mode #pomo-btn {
+  background-color: transparent;
+}
+
+.break-mode #pomo-btn:hover {
+  background-color: var(--break-05);
+}

@@ -1,0 +1,18 @@
+#selected-task {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
+#selected-task * {
+  margin-bottom: 6px ;
+}
+
+.selected {
+  border-left: 8px solid var(--dark);
+}
+
+.selected:hover {
+  border-left: 8px solid var(--dark);
+}

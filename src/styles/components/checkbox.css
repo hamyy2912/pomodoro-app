@@ -1,0 +1,30 @@
+.check-box {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.check-box:checked + .check-done {
+  border-color: var(--pomodoro);
+  background-color: var(--pomodoro);
+}
+
+.check-done {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  margin-left: 5px;
+
+  border: 5px solid transparent;
+  border-radius: 100%;
+  
+  background-image: url('../../assets/check-mark.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--pomodoro-02);
+}

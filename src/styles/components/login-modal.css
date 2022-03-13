@@ -1,0 +1,133 @@
+.login-modal {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 3;
+  background-color: var(--dark-05);  
+}
+
+.main-login {
+  position: relative;
+
+  width: 350px;
+
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+
+  color: var(--dark);
+  background-color: var(--light);
+
+  border-radius: 10px;
+}
+
+.main-login .app-name,
+.login-label {
+  color: var(--pomodoro);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-label {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.close-modal-btn {
+  margin: 20px;
+}
+
+.main-login form {
+  margin-bottom: 20px;
+
+  color: var(--sliver);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.main-login form label {
+  display: block;
+
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+}
+
+.main-login form input[type='text'],
+.main-login form input[type='password'] {
+  width: 100%;
+  
+  margin-bottom: 20px;
+  padding: 12px 10px;
+
+  box-sizing: border-box;
+  box-shadow: none;
+  
+  color: var(--dorado);
+  background-color: var(--gallery);
+  font-size: 16px;
+  
+  border: none;
+  border-radius: 4px;
+}
+
+.main-login form input[type='submit'] {
+  width: 100%;
+
+  padding: 12px;
+
+  text-align: center;
+  font-size: 14px;
+
+  cursor: pointer;
+
+  box-shadow: var(--dark-02) 0px 2px 2px;
+  color: var(--light);
+  background-color: var(--mineShaft);
+  opacity: 0.9;
+
+  border-radius: 4px;
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.error-msg,
+.success-msg {
+  margin-bottom: 20px;
+}
+
+.error-msg {
+  color: var(--warning);
+}
+
+.success-msg {
+  color: var(--success);
+}
+
+.create-account-block {
+  font-size: 14px;
+  text-align: center;
+}
+
+.create-account {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.create-account:hover {
+  opacity: 0.7;
+}

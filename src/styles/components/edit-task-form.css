@@ -1,0 +1,11 @@
+.delete-btn {
+  background-color: var(--warning);
+}
+
+.edit-input-group .input-pomo {
+  display: inline-block;
+}
+
+.edit-input-group label {
+  display: block;
+}

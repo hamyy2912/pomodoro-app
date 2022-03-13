@@ -1,0 +1,86 @@
+/* General style */
+.add-task-form,
+.edit-task-form {  
+  margin-bottom: 20px;
+
+  color: var(--dark);
+  background-color: var(--light);
+
+  border-radius: 5px;
+}
+
+/* Input group */
+.input-group {
+  padding: 20px 30px;
+}
+
+.input-group input {
+  display: block;
+
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+
+.input-task-name {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.input-task-name::placeholder,
+.input-task-name {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.input-pomo {
+  width: 50px;
+  
+  padding: 10px;
+  
+  border: 0;
+  border-radius: 5px;
+
+  background-color: var(--dark-01);
+}
+
+.input-task-name:focus-visible,
+.input-pomo:focus-visible {
+  outline: none;
+}
+
+/* Button group */
+.form-btn {
+  width: 70px;
+  height: 35px;
+
+  margin-left: 10px;
+}
+
+.btn-group {
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: var(--dark-01);
+}
+
+.edit-task-form .btn-group {
+  justify-content: space-between;
+}
+
+.cancel-btn {
+  background: none;
+}
+
+.submit-btn {
+  color: var(--light);
+  background-color: var(--grey);
+  box-shadow: var(--dark-02) 0px 2px 2px;
+}
+
+.submit-btn:disabled {
+  cursor: auto;
+  background-color: var(--grey-05);
+}
