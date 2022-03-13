@@ -1,0 +1,43 @@
+.header {
+  justify-content: space-between;
+}
+
+.app-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  
+  font-weight: 700;
+  font-size: 24px;
+
+  cursor: pointer;
+}
+
+.log-btn {
+  width: 80px;
+  height: 35px;
+
+  margin: 3px 5px;
+
+  background-color: var(--light-03);
+
+  color: inherit;
+  font-family: inherit;
+}
+
+.logout-btn {
+  display: inline;
+}
+
+.log-btn:hover {
+  background-color: var(--light);
+  color: var(--pomodoro);
+}
+
+.user-email {
+  display: inline;
+  height: 35px;
+  margin-right: 10px;
+  padding: 9px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
